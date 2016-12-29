@@ -15,13 +15,13 @@ def send_message(user, server, status, url, channel):
 
     if status == 'complete':
         color = 'good'
-        text = 'DEPLOYMENT TO *{server}* BY *{user}* SUCCESFULLY COMPLETED'
+        text = 'DEPLOYMENT TO *{server}* BY *{user}* SUCCESSFULLY COMPLETED'
     elif status == 'commenced':
         color = '#439FE0'
         text = 'DEPLOYMENT TO *{server}* COMMENCED BY *{user}*'
     elif status == 'failed':
         color = 'danger'
-        text = 'DEPLOYMENT TO *{server}* BY *{user}* FAILED\nPLEASE CHECK LOGS AND REDPLOY'
+        text = 'DEPLOYMENT TO *{server}* BY *{user}* FAILED\nPLEASE CHECK LOGS AND REDEPLOY'
     else:
         color = 'warning'
         text = 'DEPLOYMENT TO *{server}* BY *{user}* MOVED TO STATUS: *{status}*'
