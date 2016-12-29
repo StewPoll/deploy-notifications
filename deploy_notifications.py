@@ -63,7 +63,7 @@ if __name__ == '__main__':
     except getopt.GetoptError:
         print(getopt.GetoptError)
         print('Usage: python deploy-notifications.py user="some_name" url="webhook_url" [--server=au --status=complete]')
-        print('E.G. python deploy-notifications.py user="ben" url="https://webhooks.slack.com/XXXXXX" --server=eu --status="IN PROGRESS"')
+        print('E.G. python deploy-notifications.py user="ben" url="https://hooks.slack.com/XXXXXX" --server=eu --status="IN PROGRESS"')
         sys.exit(1)
 
     # Defaults
